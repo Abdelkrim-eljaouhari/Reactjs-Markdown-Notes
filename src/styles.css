@@ -1,0 +1,103 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+@import url("https://fonts.googleapis.com/css?family=Dosis|EB+Garamond");
+/*Global css*/
+.container,
+.note-wrapper,
+.header,
+.text-area-header,
+.editAndDelete {
+  display: flex;
+}
+.header-add-note,
+.editAndDelete span {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.header-add-note {
+  font-size: 24px;
+}
+.header-add-note:hover {
+  color: rgb(122, 198, 223);
+}
+.container {
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: "Dosis", sans-serif;
+  color: brown;
+}
+.text-area-delete {
+  margin-left: 10px;
+}
+.text-area-delete:hover {
+  color: brown;
+}
+.note-wrapper {
+  min-width: 450px;
+  flex-direction: column;
+  font-family: "Dosis", sans-serif;
+  font-family: "EB Garamond", serif;
+}
+.text-area {
+  border: 2px solid rgb(201, 190, 190);
+  min-height: 300px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px;
+}
+.text-area-header {
+  padding: 10px 4px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(87, 84, 84, 0.267);
+}
+textarea,
+.showMarkdown {
+  min-height: inherit;
+  width: 100%;
+  font-family: "Dosis", sans-serif;
+  font-family: "EB Garamond", serif;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  text-indent: 5px;
+}
+.showMarkdown {
+  width: 450px;
+  box-sizing: border-box;
+}
+textarea {
+  resize: none;
+}
+.showMarkdown {
+  overflow: hidden;
+}
+.showMarkdown h1:first-child {
+  margin: 0;
+}
+.showMarkdown h1:last-child {
+  margin-bottom: 0;
+}
+.showMarkdown h1 {
+  margin-top: 10px;
+  color: brown;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.text-area-date {
+  color: rgb(18, 187, 243);
+}
+
+.showMarkdown {
+  background-color: rgba(224, 208, 208, 0.473);
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
